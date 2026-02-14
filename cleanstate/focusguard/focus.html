@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Focus Mode</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="focus-body">
+
+<div class="focus-container">
+
+<h1 id="taskTitle">Focus Task</h1>
+
+<p id="timer">00:00</p>
+
+<button id="endFocusBtn" onclick="endFocus()">
+Task Completed
+</button>
+
+</div>
+
+
+<!-- FULL SCREEN WARNING OVERLAY -->
+<div id="lockOverlay">
+
+    <img src="images/focus.png">
+
+    <h2>FOCUS MODE ACTIVE</h2>
+
+    <p>You cannot leave until task is finished</p>
+
+</div>
+
+
+<script src="js/focus.js"></script>
+
+</body>
+</html>

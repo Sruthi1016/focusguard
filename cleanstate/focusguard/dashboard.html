@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Focus Guard Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body class="dashboard-body">
+
+<!-- HEADER -->
+
+<header>
+
+<h2>Focus Guard Dashboard</h2>
+
+<div id="welcomeUser"></div>
+
+<button onclick="openTaskPopup()">＋</button>
+
+<button onclick="logout()">Logout</button>
+
+</header>
+
+
+
+<!-- PRODUCTIVITY SCORE -->
+
+<section class="score-section">
+
+<div class="score-card">
+
+<h3>Productivity Score</h3>
+
+<h1 id="score">0%</h1>
+
+</div>
+
+</section>
+
+
+<!-- ANALYTICS -->
+
+<section class="analytics">
+
+<div class="chart-card">
+
+<h3>Daily Productivity</h3>
+
+<canvas id="dailyChart"></canvas>
+
+</div>
+
+
+<div class="chart-card">
+
+<h3>Monthly Productivity</h3>
+
+<canvas id="monthlyChart"></canvas>
+
+</div>
+
+</section>
+
+
+<!-- TASK SECTION -->
+
+<section class="tasks-section">
+
+<div class="task-column">
+
+<h3>Pending Tasks</h3>
+
+<ul id="pendingTasks"></ul>
+
+</div>
+
+
+<div class="task-column">
+
+<h3>Completed Tasks</h3>
+
+<ul id="completedTasks"></ul>
+
+</div>
+
+</section>
+
+
+<!-- ADD TASK BUTTON -->
+
+<button class="add-task-btn"
+onclick="openTaskModal()">
+
++
+
+</button>
+
+
+<!-- TASK MODAL -->
+
+<div id="taskModal" class="modal">
+
+<div class="modal-content">
+
+<h3>Add Task</h3>
+
+<input id="taskName"
+placeholder="Enter task name">
+
+<input id="taskTimer"
+type="number"
+placeholder="Timer (optional minutes)">
+
+<button onclick="addTask()"
+class="primary-btn">
+
+Add Task
+
+</button>
+
+
+<button onclick="closeTaskModal()"
+class="secondary-btn">
+
+Cancel
+
+</button>
+
+</div>
+
+</div>
+
+
+<script src="js/auth.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

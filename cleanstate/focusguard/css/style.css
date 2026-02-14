@@ -1,0 +1,513 @@
+/* =======================
+COLOR THEME
+======================= */
+
+:root {
+
+--offwhite: #f8f6ef;
+
+--beige: #e8dfcf;
+
+--brown: #5c4b3b;
+
+--sage: #9caf88;
+
+--pastelgreen: #cfe3d5;
+
+--gray: #6b6b6b;
+}
+
+
+/* =======================
+BODY
+======================= */
+
+body {
+
+margin: 0;
+
+font-family: Arial;
+
+background: var(--offwhite);
+
+color: var(--brown);
+
+}
+
+
+/* =======================
+HEADER
+======================= */
+
+.header {
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+padding: 20px;
+
+background: var(--beige);
+
+}
+
+
+.logo {
+
+margin: 0;
+}
+
+
+/* =======================
+BUTTONS
+======================= */
+
+button {
+
+border: none;
+
+padding: 10px 15px;
+
+border-radius: 8px;
+
+cursor: pointer;
+
+}
+
+
+.logout-btn {
+
+background: var(--brown);
+
+color: white;
+
+}
+
+
+.primary-btn {
+
+background: var(--sage);
+
+color: white;
+
+}
+
+
+.secondary-btn {
+
+background: var(--gray);
+
+color: white;
+
+}
+
+
+/* =======================
+SCORE
+======================= */
+
+.score-section {
+
+padding: 20px;
+
+}
+
+.score-card {
+
+background: var(--pastelgreen);
+
+padding: 20px;
+
+border-radius: 12px;
+
+width: 200px;
+
+}
+
+.score-card h1 {
+
+margin: 0;
+
+font-size: 40px;
+
+}
+
+
+/* =======================
+CHARTS
+======================= */
+
+.analytics {
+
+display: flex;
+
+gap: 20px;
+
+padding: 20px;
+
+}
+
+.chart-card {
+
+flex: 1;
+
+background: white;
+
+padding: 15px;
+
+border-radius: 12px;
+
+height: 300px;
+
+}
+
+.chart-card canvas {
+
+height: 220px !important;
+
+}
+
+
+/* =======================
+TASKS
+======================= */
+
+.tasks-section {
+
+display: flex;
+
+gap: 20px;
+
+padding: 20px;
+
+}
+
+.task-column {
+
+flex: 1;
+
+background: white;
+
+padding: 15px;
+
+border-radius: 12px;
+
+}
+
+.task-column ul {
+
+list-style: none;
+
+padding: 0;
+
+}
+
+.task-item {
+
+display: flex;
+
+justify-content: space-between;
+
+padding: 10px;
+
+background: var(--beige);
+
+margin-bottom: 10px;
+
+border-radius: 8px;
+
+}
+
+.task-item.completed {
+
+background: var(--pastelgreen);
+
+}
+
+
+/* =======================
+ADD BUTTON
+======================= */
+
+.add-task-btn {
+
+position: fixed;
+
+bottom: 30px;
+
+right: 30px;
+
+width: 60px;
+
+height: 60px;
+
+font-size: 30px;
+
+border-radius: 50%;
+
+background: var(--sage);
+
+color: white;
+
+}
+
+
+/* =======================
+MODAL
+======================= */
+
+.modal {
+
+display: none;
+
+position: fixed;
+
+inset: 0;
+
+background: rgba(0,0,0,0.3);
+
+justify-content: center;
+
+align-items: center;
+
+}
+
+.modal-content {
+
+background: var(--offwhite);
+
+padding: 20px;
+
+border-radius: 12px;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 10px;
+
+width: 300px;
+
+}
+
+.modal input {
+
+padding: 10px;
+
+border-radius: 8px;
+
+border: 1px solid var(--gray);
+
+}
+/* LOGIN PAGE BACKGROUND */
+
+.login-body {
+
+    background-image: url("../images/login-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Glass effect login box */
+
+.login-container {
+
+    background: rgba(255,255,255,0.85);
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    width: 300px;
+}
+
+.login-container input {
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+}
+.music-player {
+
+position: absolute;
+
+bottom: 20px;
+
+background: rgba(255,255,255,0.85);
+
+padding: 10px;
+
+border-radius: 10px;
+
+backdrop-filter: blur(10px);
+
+}
+#lockOverlay {
+
+position: fixed;
+
+top: 0;
+left: 0;
+
+width: 100%;
+height: 100%;
+
+background: rgba(0,0,0,0.9);
+
+color: white;
+
+display: none;
+
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+
+text-align: center;
+
+z-index: 9999;
+
+}
+
+#lockOverlay img {
+
+width: 150px;
+margin-bottom: 20px;
+
+}
+/* ===============================
+   FOCUS PAGE STYLING
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+.focus-body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+/* Container */
+.focus-container {
+    text-align: center;
+}
+
+
+/* Task Title */
+#taskTitle {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+/* Timer */
+#timer {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+
+/* Button */
+#endFocusBtn {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+#endFocusBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+
+#tabOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 999999;
+
+    /* center image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabOverlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#lockOverlay {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: black;
+
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    z-index: 9999;
+
+}
+

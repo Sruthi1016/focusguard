@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>Focus Guard Login</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="login-body">
+
+
+<!-- LOGIN BOX -->
+
+<div class="login-container">
+
+<h1 class="logo">Focus Guard</h1>
+
+
+<input id="username"
+placeholder="Enter username">
+
+
+<input id="password"
+type="password"
+placeholder="Enter password">
+
+
+<button onclick="login()" class="primary-btn">
+
+Login
+
+</button>
+
+
+<button onclick="register()" class="secondary-btn">
+
+Register New User
+
+</button>
+
+
+<p id="message"></p>
+
+</div>
+
+
+
+<!-- SPOTIFY MUSIC PLAYER -->
+
+<div class="music-player">
+
+<h4>Focus Music</h4>
+
+
+<select onchange="changeMusic(this.value)">
+
+<option value="37i9dQZF1DX4sWSpwq3LiO">
+
+Deep Focus
+
+</option>
+
+
+<option value="37i9dQZF1DX3PFzdbtx1Us">
+
+Peaceful Piano
+
+</option>
+
+
+<option value="37i9dQZF1DWZd79rJ6a7lp">
+
+Lo-fi Beats
+
+</option>
+
+
+<option value="37i9dQZF1DWYoYGBbGKurt">
+
+Calm Vibes
+
+</option>
+
+
+</select>
+
+
+<br><br>
+
+
+<iframe
+
+id="spotifyPlayer"
+
+style="border-radius:12px"
+
+src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4sWSpwq3LiO"
+
+width="300"
+
+height="80"
+
+frameBorder="0"
+
+allowfullscreen=""
+
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+
+</iframe>
+
+
+</div>
+
+
+
+<script src="js/auth.js"></script>
+
+
+<script>
+
+function changeMusic(id){
+
+document.getElementById("spotifyPlayer").src =
+
+"https://open.spotify.com/embed/playlist/" + id;
+
+}
+
+</script>
+
+
+</body>
+</html>
